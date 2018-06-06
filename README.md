@@ -58,6 +58,7 @@ const idbKeyval = {
       return tx.complete.then(() => keys);
     });
   },
+  ### for indexing and more sophisticated query, use JsStore instead.
   index(indexName, indexValue) {
     return dbPromise.then(db => {
       const tx = db.transaction('keyval');
